@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         // Layout measure duration in Nano seconds
         val layoutMeasureDurationNs = frameMetricsCopy.getMetric(FrameMetrics.LAYOUT_MEASURE_DURATION)
 
-        Log.d(TAG, "layoutMeasureDurationNs: " + layoutMeasureDurationNs)
+        Log.d(TAG, "layoutMeasureDurationNs: $layoutMeasureDurationNs")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -148,12 +148,12 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
 
-        private val TAG = "MainActivity"
+        private const val TAG = "MainActivity"
 
-        private val TOTAL = 100
+        private const val TOTAL = 100
 
-        private val WIDTH = 1920
+        private const val WIDTH = 1920
 
-        private val HEIGHT = 1080
+        private const val HEIGHT = 1080
     }
 }
