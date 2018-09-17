@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             @SuppressLint("InflateParams")
             constraintCalcButton.visibility = View.INVISIBLE
             val container = layoutInflater
-                    .inflate(R.layout.activity_traditional, null) as ViewGroup
+                    .inflate(R.layout.item_traditional, null) as ViewGroup
             val asyncTask = MeasureLayoutAsyncTask(
                     getString(R.string.executing_nth_iteration),
                     WeakReference(traditionalCalcButton),
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             @SuppressLint("InflateParams")
             traditionalCalcButton.visibility = View.INVISIBLE
             val container = layoutInflater
-                    .inflate(R.layout.activity_constraintlayout, null) as ViewGroup
+                    .inflate(R.layout.item_constraintlayout, null) as ViewGroup
             val asyncTask = MeasureLayoutAsyncTask(
                     getString(R.string.executing_nth_iteration),
                     WeakReference(constraintCalcButton),
